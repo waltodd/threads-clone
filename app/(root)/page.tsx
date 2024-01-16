@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import { SignIn } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <main>
-    <h1>Threads</h1>
-    </main>
+    <>
+      <div className="h-screen bg-dark-1">
+        <div>Your home page's content can go here.</div>
+        <SignIn></SignIn>
+      </div>
+    </>
   )
 }
