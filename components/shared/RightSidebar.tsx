@@ -1,5 +1,5 @@
 export default function RightSidebar (){
     return (
-        <div>RightSidebar</div>
+        <div className="rightsidebar">RightSidebar</div>
     )
 }

@@ -1,5 +1,5 @@
 export default function LeftSidebar (){
     return (
-        <div>LeftSidebar</div>
+        <div className="leftsidebar">LeftSidebar</div>
     )
 }

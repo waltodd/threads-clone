@@ -1,10 +1,8 @@
-import { UserButton } from "@clerk/nextjs";
-async function Page (){
+export default function Page() {
     return (
-        <main className="head-text">
-        <h1>Onboarding</h1>
-        <UserButton />
-        </main>
+     <main>
+      <h1>Onbarding</h1>
+     </main>
     )
-}
-export default Page;
+  }
+  
