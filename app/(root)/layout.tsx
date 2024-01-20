@@ -1,5 +1,5 @@
 import React from "react";
-import type { Metadata } from "next";
+import type { Metadata as NextMetadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
@@ -11,10 +11,13 @@ import RightSidebar from "@/components/shared/RightSidebar";
 import Topbar from "@/components/shared/Topbar";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
+interface ExtendedMetadata extends NextMetadata {
+  image?: string;
+}
+export const metadata: ExtendedMetadata = {
   title: "Threads",
   description: "A Next.js 13 Meta Threads application",
+  image: 'https://utfs.io/f/5f564cd9-fe24-4b54-aab5-e6e213a7145b-1u09v.png',
 };
 
 export default function RootLayout({
